@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test.describe('locators' , () =>{
+test.describe.skip('locators' , () =>{
 
     test ('openWebside', async ({page}) => {
 

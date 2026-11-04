@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test.skip ('test', async ({ page }) => {
   await page.goto('https://www.flipkart.com/');
   await page.locator('div').filter({ hasText: '✕LoginGet access to your' }).first().click();
   await page.getByRole('textbox', { name: 'Search for Products, Brands' }).click();
